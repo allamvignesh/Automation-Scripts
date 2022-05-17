@@ -16,3 +16,4 @@ for i in range(1, len(li)):
 	os.system(f"sudo apt install {pkg} -y")
 	os.system("sudo apt autoremove -y")
 	print(f"\n[({i}/{len(li)-2}) DONE] {pkg}")
+	
