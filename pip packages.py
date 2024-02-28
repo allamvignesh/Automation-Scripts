@@ -9,8 +9,8 @@ a = input("[GUIDE] Do you want to upgrade all packages: ")
 for i in range(1, len(packages)):
     print(f"\n[ ({i+1}/{len(packages)})PACKAGE] {packages[i]}")
     if a.lower() == 'yes' or a.lower() == 'y':
-        subprocess.call(f"pip install -U {packages[i]}")
+        subprocess.call(f"pip install -U {packages[i]} --user")
     else:
         inp = input(f"[GUIDE] Do you want to install {packages[i]}: ")
         if inp.lower() == "yes" or inp.lower() == 'y':
-            subprocess.call(f"pip install -U {packages[i]}")
+            subprocess.call(f"pip install -U {packages[i]} --user")
